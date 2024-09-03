@@ -1,0 +1,122 @@
+/*Paleta de Cores*/
+:root{
+    --corbkground: #F2B474; /* background*/
+    --cornavborda: #B22222; /* navbar - borda*/
+    --cormenu: #F2DAAE; /* menu */
+    --cortexto: #000000; /* conteúdo */
+}
+
+/*Fonte Edo*/
+@font-face{
+    font-family: 'edosz';
+    src: url('../fonts/edosz.ttf') format('truetype');
+}
+
+/* Media Desktop*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    font-family: Josefin Sans, sans-serif;
+    background-color: var(--corbkground); 
+}
+
+header{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 90px;
+    font-family: edosz, sans-serif;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: var(--cornavborda);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.topnav a {
+    display: block;
+    color: var(--cortexto);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 36px;
+}
+
+.topnav a:hover {
+    color: var(--cormenu);
+}
+
+.logoAsakusa {
+    width: 80px;
+    height: auto;
+}
+
+.nav-links{
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-links a {
+    text-align: center;
+    padding:  14px, 16px;
+}
+
+#icon{
+    display: none;  /*icon menu hamburger*/
+} 
+
+/*MOBILE*/
+@media screen and (max-width: 600px) {
+
+    .topnav{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo-div{
+        order: 1;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }    
+
+    #icon{
+        order: 2;
+        display: block;
+        position: absolute;
+        right: 30px;
+        top: 22px;
+        color: var(--cortexto);
+    }  
+    
+    .nav-links{
+        order: 3;
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }    
+
+}
+
+
+@media screen and (max-width: 600px) {
+    .topnav.responsive {
+        position: sticky;
+        top: 0;
+    }  
+
+    .topnav.responsive .nav-links {
+        display: flex;
+    }
+
+}

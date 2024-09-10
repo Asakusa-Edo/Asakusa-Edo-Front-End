@@ -1,13 +1,19 @@
 /*Paleta de Cores*/
-:root{
-    --corbkground: #F2B474; /* background*/
-    --cornavborda: #B22222; /* navbar - borda*/
-    --cormenu: #F2DAAE; /* menu */
-    --cortexto: #000000; /* conteúdo */
+:root {
+    --corbkground: #F2B474;
+    /* background*/
+    --cornavborda: #B22222;
+    /* navbar - borda*/
+    --cormenu: #F2DAAE;
+    /* menu */
+    --cortexto: #000000;
+    /* conteúdo */
+    --cortexto2: #FFFFFF;
+    /* conteúdo footer*/
 }
 
 /*Fonte Edo*/
-@font-face{
+@font-face {
     font-family: 'edosz';
     src: url('../fonts/edosz.ttf') format('truetype');
 }
@@ -17,15 +23,25 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+
 }
 
 body {
     font-family: Josefin Sans, sans-serif;
-    background-color: var(--corbkground); 
+    background-color: var(--corbkground);
+    height: 100vh;
 }
 
-header{
+.container {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: var(--corbkground);
+
+}
+
+/*NAVBAR*/
+header {
     position: sticky;
     top: 0;
     width: 100%;
@@ -60,51 +76,118 @@ header{
     height: auto;
 }
 
-.nav-links{
+.nav-links {
     display: flex;
     flex-direction: row;
 }
 
 .nav-links a {
     text-align: center;
-    padding:  14px, 16px;
+    padding: 14px, 16px;
 }
 
-#icon{
-    display: none;  /*icon menu hamburger*/
-} 
+#icon {
+    display: none;
+    /*icon menu hamburger*/
+}
+
+
+footer {
+    background-color: var(--cornavborda);
+    padding: 30px;
+    text-align: center;
+    width: 100%;
+    position: sticky;
+    clear: both;
+    /* garante que o footer fica no final da página*/
+}
+
+footer .socialMedia {
+    display: flex;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+    /* allows items to wrap to the next line */
+}
+
+footer .socialMedia a {
+    margin: 10px;
+    display: inline-block;
+}
+
+footer .socialMedia img {
+    width: 50px;
+    height: auto;
+    margin: 0 20px;
+}
+
+footer .socialMedia a:first-child img {
+    margin-left: 8px;
+    /* margem na extremidade esquerda */
+}
+
+footer .socialMedia a:last-child img {
+    margin-right: 8px;
+    /* margem na extremidade direita */
+}
 
 /*MOBILE*/
 @media screen and (max-width: 600px) {
 
-    .topnav{
+    .topnav {
         flex-direction: column;
         align-items: center;
     }
 
-    .logo-div{
+    .logo-div {
         order: 1;
         display: flex;
         justify-content: center;
         width: 100%;
-    }    
+    }
 
-    #icon{
+    #icon {
         order: 2;
         display: block;
         position: absolute;
         right: 30px;
         top: 22px;
         color: var(--cortexto);
-    }  
-    
-    .nav-links{
+    }
+
+    .nav-links {
         order: 3;
         display: none;
         flex-direction: column;
         width: 100%;
         align-items: center;
-    }    
+    }
+
+
+    body,
+    html {
+        height: 100%;
+        margin: 0;
+    }
+
+
+    .container {
+        width: 80%;
+    }
+
+
+
+    footer {
+        /* margin-top: auto; */
+        padding: 20px;
+
+
+    }
+
+    footer .socialMedia img {
+        width: 40px;
+        /* height: auto; */
+        margin: 0 10px;
+    }
 
 }
 
@@ -113,7 +196,7 @@ header{
     .topnav.responsive {
         position: sticky;
         top: 0;
-    }  
+    }
 
     .topnav.responsive .nav-links {
         display: flex;

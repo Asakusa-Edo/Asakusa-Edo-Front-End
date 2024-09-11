@@ -42,6 +42,7 @@ body {
 
 /*NAVBAR*/
 header {
+    z-index: 99;
     position: sticky;
     top: 0;
     width: 100%;

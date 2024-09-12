@@ -1,3 +1,20 @@
+/*Paleta de Cores*/
+:root {
+    --corbkground: #F2B474;
+    /* background*/
+    --cornavborda: #B22222;
+    /* navbar - borda*/
+    --cormenu: #F2DAAE;
+    /* menu */
+    --cortexto: #000000;
+    /* conteúdo */
+    --cortexto2: #FFFFFF;
+    /* conteúdo footer*/
+    --corfundotext: rgba(255, 255, 255, 0.25);
+    /* conteúdo footer*/
+}
+
+
 /* Contêiner do carrossel */
 .w3-content {
     position: relative;
@@ -14,28 +31,28 @@
 /* Estilo para os botões de navegação e indicadores do slideshow */
 .w3-left, .w3-right {
     cursor: pointer;
-
-    font-size: 24px;
+    font-size: 40px;
     font-weight: bold;
     position: absolute;
     top: 50%;
     width: auto;
     padding: 16px;
     margin-top: -22px;
-    color: #B22222;
+    color: var(--cortexto2);
     text-align: center;
     border-radius: 0 3px 3px 0;
     user-select: none;
     transition: 0.3s;
     opacity: 75%;
+   
 }
 
-.w3-left :hover {
+.w3-left:hover, .w3-right:hover {
     opacity: 100%;
-}
-
-.w3-left {
-    left: 0;
+    background-color:  var(--corfundotext);
+    color: var(--cornavborda);
+    border: solid 2px;
+    border-radius: 20%;
 }
 
 .w3-right {
@@ -46,16 +63,28 @@
 /* Estilo para os indicadores do slideshow */
 .w3-badge {
     cursor: pointer;
-    height: 13px;
-    width: 13px;
+    height: 15px;
+    width: 15px;
     padding: 0;
-    color: black;
+    background-color: var(--cortexto); /* Define a cor de fundo */
     display: inline-block;
     margin: 0 2px;
     border-radius: 50%;
-    border: solid 10px;
-    
-    
+    border: solid 1px var(--cortexto2); /* Define a cor da borda */
+}
+
+.w3-badge:hover {
+    background-color: var(--cornavborda);
+ 
+}
+
+.w3-badge-active {
+    background-color: var(--cornavborda); /* Cor de fundo quando ativo */
+
+}
+
+.bolinhas {
+    margin-top: -35px;
 }
 
 
@@ -69,8 +98,22 @@
 /* DESKTOP IMG */
 @media screen and (min-width: 1000px) {
 
+    .w3-left, .w3-right {
+    
+        font-size: 80px;
+        
+    }
+
     .mySlides img {
         width: 1100px;
         height: 800px;
     }
+
+    .w3-badge {
+        cursor: pointer;
+        height: 25px;
+        width: 25px;
+        border: solid 2px var(--cortexto2); /* Define a cor da borda */
+    }
+
 }

@@ -40,6 +40,13 @@ body {
 
 }
 
+.Carosel{
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: var(--corbkground);
+}
+
 /*NAVBAR*/
 header {
     z-index: 99;
@@ -100,6 +107,7 @@ footer {
     width: 100%;
     position: sticky;
     clear: both;
+    margin-top: 100%;
     /* garante que o footer fica no final da página*/
 }
 

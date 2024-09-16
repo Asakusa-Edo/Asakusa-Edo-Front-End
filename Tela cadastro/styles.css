@@ -208,7 +208,7 @@ header {
         height: 100px;
         display: flex;
         flex-direction: row;
-        gap: 295px;
+        gap: 60px;
     }
 
     .footer img {

@@ -100,7 +100,9 @@ button {
     color: white;
     text-align: center;
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
+    justify-content: center;
+    gap: 60px;
     align-items: center;
 }
 

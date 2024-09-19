@@ -95,9 +95,64 @@ header {
 }
 
 #icon {
-    display: none;
-    /*icon menu hamburger*/
+    display: none;  /*icon menu hamburger*/
 }
+
+#info1bgVermelha {
+    background-image: url('../img/bgvermelha.png');
+    background-repeat: no-repeat;
+    width: 1902px;
+    height: 897px;
+    display: flex;
+    margin-top: 53px;
+}
+
+#info1 {
+    width: 1170px;
+    height: 897px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+.infoFoto1 {
+    width: 1170px;
+    height: 792px;
+    margin-left: -200px;
+}
+
+.molduraHorizontal {
+    display: none;
+}
+
+.molduraVertical {
+    width: 526px;
+    height: 792px;
+}
+
+.concon {
+    width: 1902px;
+}
+
+.text-overlay {
+    color: var(--cortexto);
+    font-size: 30px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-style: italic;
+    text-align: center;
+    letter-spacing: -2px;
+    padding: 10px;    
+    border-radius: 10px;
+    margin-right: 50px;
+    position: absolute;
+    left: 70%;
+    width: 391px;
+    height: 484px;
+}
+
+
+
 
 
 footer {

@@ -10,6 +10,9 @@
     /* conteúdo */
     --cortexto2: #FFFFFF;
     /* conteúdo footer*/
+    --corTeste: #f30bc1;
+    /*teste no container*/
+    --corTeste2: #624ff0;
 }
 
 /*Fonte Edo*/
@@ -27,24 +30,21 @@
 }
 
 body {
-    font-family: Josefin Sans, sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     background-color: var(--corbkground);
     height: 100vh;
+}
+
+.full-width-container {
+    width: 100%;
+    max-width: 1902px;
+    margin: 0 auto;
 }
 
 .container {
     width: 90%;
     margin: 0 auto;
     text-align: center;
-    background-color: var(--corbkground);
-
-}
-
-.Carosel{
-    width: 90%;
-    margin: 0 auto;
-    text-align: center;
-    background-color: var(--corbkground);
 }
 
 /*NAVBAR*/
@@ -54,7 +54,7 @@ header {
     top: 0;
     width: 100%;
     height: 90px;
-    font-family: edosz, sans-serif;
+    font-family: 'edosz', sans-serif;
 }
 
 .topnav {
@@ -80,7 +80,7 @@ header {
 }
 
 .logoAsakusa {
-    width: 80px;
+    width: 100px;
     height: auto;
 }
 
@@ -95,8 +95,11 @@ header {
 }
 
 #icon {
-    display: none;  /*icon menu hamburger*/
+    display: none;
+    /*icon menu hamburger*/
 }
+
+/*CONTEUDO*/
 
 #info1bgVermelha {
     background-image: url('../img/bgvermelha.png');
@@ -131,10 +134,6 @@ header {
     height: 792px;
 }
 
-.concon {
-    width: 1902px;
-}
-
 .text-overlay {
     color: var(--cortexto);
     font-size: 30px;
@@ -142,8 +141,7 @@ header {
     font-style: italic;
     text-align: center;
     letter-spacing: -2px;
-    padding: 10px;    
-    border-radius: 10px;
+    padding: 10px;
     margin-right: 50px;
     position: absolute;
     left: 70%;
@@ -151,26 +149,189 @@ header {
     height: 484px;
 }
 
+/*div info2 info3*/
+
+#info2,
+#info3 {
+    margin-top: 53px;
+    width: 1688px;
+    height: 442px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.iLinha1 {
+    width: 828px;
+    height: 412px;
+}
+
+.moldHori {
+    width: 677px;
+    height: 442px;
+}
+
+#info2 p {
+    color: var(--cortexto);
+    font-size: 30px;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    margin-right: 50px;
+    position: absolute;
+    left: 62%;
+    width: 555px;
+    height: 274px;
+}
+
+/*div info3*/
+
+/* #info3{
+    margin-top: 53px;
+    width: 1688px;
+    height: 442px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} */
+
+.iLinha1 {
+    width: 828px;
+    height: 448px;
+}
+
+.moldHori {
+    width: 677px;
+    height: 442px;
+}
+
+#info3 p {
+    color: var(--cortexto);
+    font-size: 30px;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    /*  letter-spacing: -2px;
+    padding: 10px; */
+    padding-top: 40px;
+    margin-right: 50px;
+    position: absolute;
+    left: 9%;
+    width: 555px;
+    height: 274px;
+}
 
 
+#sobre {
+    background-image: url('../img/bgvermelha.png');
+    background-repeat: no-repeat;
+    width: 1902px;
+    height: 897px;
+    display: flex;
+    margin-top: 53px;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding-top: 150px;
+}
 
 
+#sobre h1 {
+    color: var(--cortexto2);
+    font-size: 128px;
+    font-family: 'Edosz', sans-serif;
+}
+
+#sobre p {
+    color: var(--cortexto2);
+    font-size: 34px;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    width: 1350px;
+    height: 341px;
+    padding-top: 100px;
+}
+
+#checkin {
+    max-width: 1902px;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+}
+
+.moldHori2 {
+    width: 1110px;
+    height: 726px;
+    margin-top: 53px;
+}
+
+#checkin h1,
+#checkin p,
+button {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+
+#checkin h1 {
+    color: var(--cortexto);
+    font-size: 64px;
+    font-family: 'Edosz', sans-serif;
+    text-align: center;
+    top: 20%;
+
+}
+
+#checkin p {
+    color: var(--cortexto);
+    font-size: 34px;
+    font-family: 'Josefin Sans', sans-serif;
+    top: 40%;
+    margin-right: 50px;
+    width: 812px;
+    height: 160px;
+    left: 25%;
+
+}
+
+button {
+    width: 250px;
+    height: 90px;
+    background-color: var(--cortexto);
+    border: solid 4px var(--cornavborda);
+    border-radius: 50px;
+    color: var(--cortexto2);
+    font-size: 30px;
+    font-family: 'Edosz', sans-serif;
+    top: 60%;
+    cursor: pointer;
+    left: 43%;
+}
+
+button:hover {
+    background-color: var(--cornavborda);
+}
+
+/* FIM CONTEUDO*/
+
+
+/*FOOTER*/
 footer {
     background-color: var(--cornavborda);
-    padding: 30px;
-    text-align: center;
+    height: 120px;
+    left: 0;
+    bottom: 0;
     width: 100%;
-    position: sticky;
-    clear: both;
-    margin-top: 100%;
-    /* garante que o footer fica no final da página*/
+    color: var(--cortexto);
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+    gap: 40px;
+    margin-top: 53px;
+    padding-top: 20px;
 }
 
 footer .socialMedia {
     display: flex;
     justify-content: center;
-    /* flex-wrap: wrap; */
-    /* allows items to wrap to the next line */
 }
 
 footer .socialMedia a {
@@ -179,7 +340,7 @@ footer .socialMedia a {
 }
 
 footer .socialMedia img {
-    width: 50px;
+    width: 70px;
     height: auto;
     margin: 0 20px;
 }
@@ -192,6 +353,14 @@ footer .socialMedia a:first-child img {
 footer .socialMedia a:last-child img {
     margin-right: 8px;
     /* margem na extremidade direita */
+}
+
+
+/*TABLET*/
+@media (max-width: 1200px) {
+    .full-width-container {
+        width: 100%;
+    }
 }
 
 /*MOBILE*/
@@ -226,35 +395,49 @@ footer .socialMedia a:last-child img {
         align-items: center;
     }
 
-
     body,
     html {
         height: 100%;
         margin: 0;
     }
 
+    .full-width-container {
+        width: 100%;
+        padding: 0 20px;
+    }
 
     .container {
         width: 80%;
     }
 
 
+    .img-info1 img {
+        display: none;
+    }
+
+    .molduraVertical {
+        display: none;
+    }
+
+    .molduraHorizontal {
+        display: block;
+    }
+
+    .text-overlay {
+        width: 45%;
+        font-size: 20px;
+    }
 
     footer {
-        /* margin-top: auto; */
         padding: 20px;
-
-
     }
 
     footer .socialMedia img {
         width: 40px;
-        /* height: auto; */
         margin: 0 10px;
     }
 
 }
-
 
 @media screen and (max-width: 600px) {
     .topnav.responsive {
@@ -267,3 +450,4 @@ footer .socialMedia a:last-child img {
     }
 
 }
+

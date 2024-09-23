@@ -142,6 +142,11 @@ header {
     /*icon menu hamburger*/
 }
 
+.cadastro input[type="submit"]:hover {
+    background-color: var(--cornavborda);
+}
+
+
 /*MOBILE*/
 @media screen and (max-width: 600px) {
 

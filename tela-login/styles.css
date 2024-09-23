@@ -74,6 +74,7 @@ body {
     flex-direction: row;
     justify-content: space-around;
     gap: 130px;
+    margin-top: 50px;
 }
 
 button {
@@ -86,8 +87,12 @@ button {
     width: 225px;
     font-family: "edosz";
     font-weight: 200;
-    margin-top: 50px;
+    /* margin-top: 50px; */
 
+}
+
+button:hover {
+    background-color: var(--cornavborda);
 }
 
 .footer {
